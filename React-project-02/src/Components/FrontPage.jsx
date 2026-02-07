@@ -11,7 +11,6 @@ export const FrontPage = () => {
       <h1>Legal Compliance</h1>
       <div className="text-6xl text-blue-500">In India</div>
      </div>
-     {/* Search bar */}
      <div>
       <input type="search" placeholder="Search services... "
       className="w-full pl-10 pr-4 py-3 mt-10 rounded-xl border placeholder-white  hover:border-[#53A2BE] hover:bg-[#53A2BE]/10
@@ -46,3 +45,5 @@ export const FrontPage = () => {
   </section>
   );
 };
+
+
