@@ -1,8 +1,8 @@
 export const FrontPage = () => {
   return (
   <section className=" relative min-h-screen flex flex-col px-4 pb-10 text-center justify-center ">
-    <div className="container max-w-6xl mx-auto">
-     <div className="">
+    <div className="container max-w-6xl mx-auto text-center justify-center">
+     <div className=" flex flex-col text-center justify-center">
       <span className="text-4xl">
         Let's connect to save your <span className="text-blue-500">Time & Money</span> on
       </span>
