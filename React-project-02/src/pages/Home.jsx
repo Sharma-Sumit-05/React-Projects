@@ -1,3 +1,4 @@
+import { AboutExperience } from "../Components/AboutExperience"
 import { Front02 } from "../Components/Front02"
 import { FrontPage } from "../Components/FrontPage"
 import { Navbar } from "../Components/Navbar"
@@ -17,6 +18,7 @@ export const Home = () => {
 <FrontPage />
 <Front02 />
 <OurStory />
+<AboutExperience />
      </main>
   </div>
 }
