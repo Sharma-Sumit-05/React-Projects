@@ -113,26 +113,44 @@
   }
 }
 
-@utility container{
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+
+
+@utility container {
   margin-inline: auto;
   padding-inline: 2rem;
-
-  @media (width >= 640px){
+  width: 100%;
+  max-width: 100%;
+  
+  @media (width >= 640px) {
     max-width: 640px;
   }
-   @media (width >= 768px){
+  @media (width >= 768px) {
     max-width: 768px;
   }
-   @media (width >= 1024px){
+  @media (width >= 1024px) {
     max-width: 1024px;
   }
-   @media (width >= 1280px){
+  @media (width >= 1280px) {
     max-width: 1280px;
   }
-   @media (width >= 1400px){
+  @media (width >= 1400px) {
     max-width: 1400px;
   }
 }
+
 
 @utility text-glow {
   @apply relative;
@@ -173,3 +191,31 @@ box-shadow: 0 0 10px 2px rgba(255, 355, 255,0.4)
   padding: 0;
   text-align: center;
 }
+
+
+/* 
+<div className="absolute bottom-0 left-0 w-full overflow-hidden bg-blue-100 py-7">
+  <div className="flex w-max animate-scroll whitespace-nowrap items-center">
+
+    {[...Array(10)].map((_, index) => (
+      <div
+        key={index}
+        className="flex items-center mx-12 gap-4"
+      >
+       
+        <img
+          src="/Logo/logo.png"   // change if needed
+          alt="Arostat Logo"
+          className="h-10 w-auto"
+        />
+
+       
+        <span className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
+          Arostat Solutions LLP
+        </span>
+      </div>
+    ))}
+
+  </div>
+</div>
+*/

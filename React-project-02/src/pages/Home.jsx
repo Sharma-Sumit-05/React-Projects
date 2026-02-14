@@ -5,6 +5,7 @@ import { Front02 } from "../Components/Front02"
 import { FrontPage } from "../Components/FrontPage"
 import { Navbar } from "../Components/Navbar"
 import { OurStory } from "../Components/OurStory"
+import { TestimonialSection } from "../Components/TestimonialSection.jsx"
 import { ThemeToggle } from "../Components/ThemeToggle"
 
 export const Home = () => {
@@ -19,6 +20,7 @@ export const Home = () => {
      <main>
 <FrontPage />
 <Front02 />
+<TestimonialSection />
 <OurStory />
 <AboutExperience />
 <BestServices />

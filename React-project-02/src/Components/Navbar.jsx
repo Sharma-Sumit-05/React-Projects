@@ -176,9 +176,9 @@ export const Navbar = () => {
     )}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#setup" className="flex flex-col items-center space-y-0.5 hover:scale-105 transition-all duration-200 group">
-          <img src="/Logo/logo.png" className="h-10 w-auto drop-shadow-lg group-hover:drop-shadow-2xl transition-all" alt="Arostat" />
-          <span className="text-sm font-bold text-[#53A2BE] tracking-tight group-hover:text-[#ABDAFC] transition-colors">Arostat Solutions LLP</span>
+        <a href="#setup" className="flex flex-col items-center space-y-0.5">
+          <img src="/Logo/logo.png" className="h-14 w-auto " alt="Arostat" />
+          <span className="text-sm font-bold text-blue-400 ">Arostat Solutions LLP</span>
         </a>
 
         {/* Desktop Navigation */}

@@ -3,16 +3,14 @@ import { Check } from "lucide-react";
 
 export const OurStory = () => {
   return (
-    <section className="min-h-screen bg-gray-300 flex flex-col justify-center items-center py-20 px-4">
+    <section className="min-h-screen bg-gray-100 flex flex-col justify-center items-center py-20 px-4">
       <div className="max-w-5xl w-full">
-        {/* Fixed Title */}
         <div className="text-center mb-16">
           <h1 className="text-6xl font-semibold underline text-gray-800 pb-4">
             Our Story
           </h1>
         </div>
 
-        {/* Fixed Paragraph */}
         <div className="text-lg leading-relaxed text-justify mb-10 space-y-6">
           <p>
             Arostat Solutions LLP is a professionally managed Corporate Legal Consultants firm operating from New Delhi. 

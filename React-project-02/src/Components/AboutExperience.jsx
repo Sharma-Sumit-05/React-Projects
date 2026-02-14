@@ -20,7 +20,7 @@ export const AboutExperience = () => {
               />
             </div>
             <div className="text-center space-y-3">
-              <h2 className="text-3xl  space-y-10 font-bold text-gray-900 group-hover:text-red-600 transition-colors">COMPLIANCE</h2>
+              <h2 className="text-3xl  space-y-10 font-bold text-gray-900">COMPLIANCE</h2>
               <p className="text-gray-900 font-semibold  leading-relaxed max-w-md">
                 Navigate Regulations Confidently With Our Expert Compliance Services.
               </p>
@@ -37,7 +37,7 @@ export const AboutExperience = () => {
               />
             </div>
             <div className="text-center space-y-3">
-              <h2 className="text-3xl  space-y-10 font-bold text-gray-900 group-hover:text-red-600 transition-colors">CONSULTING</h2>
+              <h2 className="text-3xl  space-y-10 font-bold text-gray-900">CONSULTING</h2>
               <p className="text-gray-900 
              font-semibold  leading-relaxed max-w-md">
                 Navigate your business success with expert consulting corporate advisory.
@@ -55,7 +55,7 @@ export const AboutExperience = () => {
               />
             </div>
             <div className="text-center space-y-3">
-              <h2 className="text-3xl space-y-10 font-bold text-gray-900 group-hover:text-red-600 transition-colors">MANAGING TAX CONTROVERSIES</h2>
+              <h2 className="text-3xl space-y-10 font-bold text-gray-900">MANAGING TAX CONTROVERSIES</h2>
               <p className="text-gray-900 font-semibold leading-relaxed max-w-md">
                 Tax Controversy Management That Is Skilled For Your Business Confidence.
               </p>
