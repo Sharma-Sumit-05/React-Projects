@@ -92,34 +92,53 @@ export const Footer = () => {
       </div>
 
 
-<div className="relative py-8 border-t border-b border-blue-500 bg-blue-50 rounded-lg mx-4">
-  <div className="flex items-center justify-center gap-8 max-w-4xl mx-auto px-6">
-    <span className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-all duration-200 group">
-      <MapPin className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" />
-      <span className="font-medium">G-45/1, Laxmi-Park, Nangloi, West-Delhi-41</span>
-    </span>
+<div className="space-y-10">
+  {/* Contact Bar - Fully Responsive and Theme-Aware */}
+  <div className="relative py-8 border-t border-b border-primary/30 bg-card/50 dark:bg-muted/20 rounded-2xl mx-4">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 max-w-6xl mx-auto px-6">
+      
+      {/* Address */}
+      <span className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-all duration-200 group text-center md:text-left">
+        <MapPin className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+        <span className="font-medium text-sm md:text-base">G-45/1, Laxmi-Park, Nangloi, West-Delhi-41</span>
+      </span>
 
-    <span className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-all duration-200 group">
-      <Mail className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform" />
-      <span className="font-medium">xyz@arostatsolutionllp.com</span>
-    </span>
+      {/* Email */}
+      <span className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-all duration-200 group">
+        <Mail className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+        <span className="font-medium text-sm md:text-base">xyz@arostatsolutionllp.com</span>
+      </span>
 
-    <span className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-all duration-200 group">
-      <Phone className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" />
-      <span className="font-medium">+91 9999888877</span>
+      {/* Phone */}
+      <span className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-all duration-200 group">
+        <Phone className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+        <span className="font-medium text-sm md:text-base">+91 9999888877</span>
+      </span>
+    </div>
+  </div>
+
+  {/* Policy Links */}
+  <div className="text-sm md:text-lg font-semibold flex flex-wrap items-center justify-center gap-4 text-muted-foreground">
+    <a href="#" className="hover:text-primary transition-colors">Terms & Conditions</a>
+    <span className="hidden md:inline">|</span>
+    <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+    <span className="hidden md:inline">|</span>
+    <a href="#" className="hover:text-primary transition-colors">Refund Policy</a>
+  </div>
+
+  {/* Copyright Line */}
+  <div className="flex justify-center items-center pb-10">
+    <span className="flex flex-wrap justify-center items-center gap-2 text-base md:text-xl font-semibold text-muted-foreground">
+      <Copyright className="w-4 h-4" />
+      <span>2025-2026</span>
+      <span>|</span>
+      <span>Made With</span>
+      <Heart className="w-5 h-5 text-red-500 fill-red-500 animate-pulse" />
+      <span className="text-foreground">Arostate</span>
+      <span>|</span>
+      <span className="text-center">All Rights Reserved.</span>
     </span>
   </div>
-</div>
-
-
-<div className="text-xl font-semibold pt-5 flex items-center justify-center">
-  <span>Terms & Conditions | Privacy Policy | Refund Policy</span>
-</div>
-
-<div className="flex justify-center items-center pt-10">
-  <span className="flex justify-center items-center text-2xl font-semibold">
-    <Copyright className="w-4 h-4 text-gray-500" />2025-2026 | Made With <Heart className="w-5 h-5 text-red-500" /> Arostate | All Rights Reserved.
-  </span>
 </div>
 
     </div>

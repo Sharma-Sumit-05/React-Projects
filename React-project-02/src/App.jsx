@@ -1,19 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Layout } from "./Components/Layout"; // Path updated to point to Components
 import { Home } from "./pages/Home";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import { NotFound } from "./pages/NotFound";
-
+import { Proprietorship } from "./pages/Setup/Proprietorship"; 
 
 function App() {
   return (
-    <>
-     <BrowserRouter>
-     <Routes>
-      <Route index element = {<Home />}/>
-      <Route path="*" element={<NotFound />}/>
-     </Routes>
-     </BrowserRouter>
-    </>
-  )
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/setup/proprietorship" element={<Proprietorship />} />
+        </Routes>
+      </Layout>
+    </Router>
+  );
 }
 
-export default App
+export default App;

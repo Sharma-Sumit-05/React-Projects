@@ -1,31 +1,19 @@
-import { AboutExperience } from "../Components/AboutExperience"
-import { BestServices } from "../Components/BestServices"
-import { Footer } from "../Components/Footer"
-import { Front02 } from "../Components/Front02"
-import { FrontPage } from "../Components/FrontPage"
-import { Navbar } from "../Components/Navbar"
-import { OurStory } from "../Components/OurStory"
-import { TestimonialSection } from "../Components/TestimonialSection.jsx"
-import { ThemeToggle } from "../Components/ThemeToggle"
+import { AboutExperience } from "../Components/AboutExperience";
+import { BestServices } from "../Components/BestServices";
+import { Front02 } from "../Components/Front02";
+import { FrontPage } from "../Components/FrontPage";
+import { OurStory } from "../Components/OurStory";
+import { TestimonialSection } from "../Components/TestimonialSection.jsx";
 
 export const Home = () => {
-  return <div>
-    {/* themetoggle */}
-<ThemeToggle />
-
-{/* navbar */}
-     <Navbar /> 
-
-     {/* Front Page */}
-     <main>
-<FrontPage />
-<Front02 />
-<TestimonialSection />
-<OurStory />
-<AboutExperience />
-<BestServices />
-     </main>
-     {/* Footer */}
-     <Footer />
-  </div>
-}
+  return (
+    <>
+      <FrontPage />
+      <Front02 />
+      <TestimonialSection />
+      <OurStory />
+      <AboutExperience />
+      <BestServices />
+    </>
+  );
+};
