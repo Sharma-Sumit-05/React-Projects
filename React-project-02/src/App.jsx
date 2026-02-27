@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "./Components/Layout"; // Path updated to point to Components
 import { Home } from "./pages/Home";
-import { Proprietorship } from "./pages/Setup/Proprietorship"; 
+import { Proprietorship } from "./pages/Setup/Proprietorship";
+import { UnregisteredPartnership } from "./pages/Setup/UnregisteredPartnership"; 
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/setup/proprietorship" element={<Proprietorship />} />
-           <Route path="/setup/unregisterd-partnership" element={<Proprietorship />} />
+           <Route path="/setup/unregistered-partnership" element={<UnregisteredPartnership />} />
         </Routes>
       </Layout>
     </Router>
