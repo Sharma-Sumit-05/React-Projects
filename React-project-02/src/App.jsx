@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/setup/proprietorship" element={<Proprietorship />} />
+           <Route path="/setup/unregisterd-partnership" element={<Proprietorship />} />
         </Routes>
       </Layout>
     </Router>
