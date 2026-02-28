@@ -3,6 +3,7 @@ import { Layout } from "./Components/Layout"; // Path updated to point to Compon
 import { Home } from "./pages/Home";
 import { Proprietorship } from "./pages/Setup/Proprietorship";
 import { UnregisteredPartnership } from "./pages/Setup/UnregisteredPartnership"; 
+import {Partnership} from "./pages/Setup/Partnership";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/setup/proprietorship" element={<Proprietorship />} />
            <Route path="/setup/unregistered-partnership" element={<UnregisteredPartnership />} />
+            <Route path="/setup/partnership" element={<Partnership />} />
         </Routes>
       </Layout>
     </Router>
