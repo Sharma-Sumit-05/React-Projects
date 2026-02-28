@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { Proprietorship } from "./pages/Setup/Proprietorship";
 import { UnregisteredPartnership } from "./pages/Setup/UnregisteredPartnership"; 
 import {Partnership} from "./pages/Setup/Partnership";
+import {LLPRegistration} from "./pages/Setup/LLPRegistration";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/setup/proprietorship" element={<Proprietorship />} />
            <Route path="/setup/unregistered-partnership" element={<UnregisteredPartnership />} />
             <Route path="/setup/partnership" element={<Partnership />} />
+            <Route path="/setup/llp-registration" element={<LLPRegistration />} />
         </Routes>
       </Layout>
     </Router>
