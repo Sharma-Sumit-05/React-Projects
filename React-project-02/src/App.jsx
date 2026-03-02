@@ -7,6 +7,7 @@ import {Partnership} from "./pages/Setup/Partnership";
 import {LLPRegistration} from "./pages/Setup/LLPRegistration";
 import {OnePersonCompanyRegistration} from "./pages/Setup/OnePersonCompanyRegistration";
 import { PrivateLimitedCompany } from "./pages/Setup/PrivateLimitedCompany";
+import { PublicLimitedCompany } from "./pages/Setup/PublicLimitedCompany";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
             <Route path="/setup/llp-registration" element={<LLPRegistration />} />
             <Route path="/setup/one-person-company-registration" element={<OnePersonCompanyRegistration />} />
              <Route path="/setup/private-limited-company" element={<PrivateLimitedCompany />} />
+             <Route path="/setup/public-limited-company" element={<PublicLimitedCompany />} />
+
         </Routes>
       </Layout>
     </Router>
