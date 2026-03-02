@@ -1,6 +1,10 @@
+import RainEffect  from './RainEffect';
+
 export const FrontPage = () => {
   return (
     <section className="relative min-h-screen bg-background flex flex-col justify-center px-4 py-10 md:py-16 text-center">
+       <RainEffect />
+
       <div className="container mx-auto w-full max-w-6xl">
         
         {/* Subtitle */}

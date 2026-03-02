@@ -12,8 +12,11 @@
   "dependencies": {
     "@radix-ui/react-toast": "^1.2.15",
     "@tailwindcss/vite": "^4.1.18",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
     "class": "^0.1.4",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.34.3",
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
