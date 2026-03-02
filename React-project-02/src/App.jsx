@@ -8,6 +8,7 @@ import {LLPRegistration} from "./pages/Setup/LLPRegistration";
 import {OnePersonCompanyRegistration} from "./pages/Setup/OnePersonCompanyRegistration";
 import { PrivateLimitedCompany } from "./pages/Setup/PrivateLimitedCompany";
 import { PublicLimitedCompany } from "./pages/Setup/PublicLimitedCompany";
+import { Section8Company } from "./pages/Setup/Section8Company";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/setup/one-person-company-registration" element={<OnePersonCompanyRegistration />} />
              <Route path="/setup/private-limited-company" element={<PrivateLimitedCompany />} />
              <Route path="/setup/public-limited-company" element={<PublicLimitedCompany />} />
+             <Route path="/setup/section-8-company" element={<Section8Company />} />
 
         </Routes>
       </Layout>
