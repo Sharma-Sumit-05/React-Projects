@@ -11,6 +11,7 @@ import { PublicLimitedCompany } from "./pages/Setup/PublicLimitedCompany";
 import { Section8Company } from "./pages/Setup/Section8Company";
 import { TrustRegistration } from "./pages/Setup/TrustRegistration";
 import { SocietyRegistration } from "./pages/Setup/SocietyRegistration";
+import { ForiegnSubsidiaryCompanyRegistration } from "./pages/Setup/ForeignSubsidiaryCompanyRegistration";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
              <Route path="/setup/section-8-company" element={<Section8Company />} />
               <Route path="/setup/trust-registration" element={<TrustRegistration />} />
               <Route path="/setup/society-registration" element={<SocietyRegistration />} />
-
+              <Route path="/setup/foreign-subsidiary-company-registration" element={<ForiegnSubsidiaryCompanyRegistration />} />
         </Routes>
       </Layout>
     </Router>
