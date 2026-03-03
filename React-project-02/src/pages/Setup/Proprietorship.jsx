@@ -1,4 +1,4 @@
-import { Zap, Clock, User, Landmark, CheckCircle2, AlertCircle } from "lucide-react";
+import { Zap, User, Landmark, CheckCircle2, AlertCircle } from "lucide-react";
 
 export const Proprietorship = () => {
   return (
@@ -283,6 +283,16 @@ export const Proprietorship = () => {
             <p>Professional fees ensure accuracy; direct government portal fees (where applicable) are extra.</p>
           </div>
         </div>
+<div className="text-justify bg-card/50 dark:bg-card/20 p-3 sm:p-5 border border-border rounded-lg shadow-sm">
+  <div className="mb-2 sm:mb-3">
+    <h1 className="text-xl sm:text-2xl md:text-2xl font-black text-foreground">Timeline</h1>
+  </div>
+  <div className="space-y-1 sm:space-y-2 text-sm sm:text-base">
+    <p className="text-foreground/90 font-medium">Estimated Duration: 1 to 2 Weeks</p>
+    <p className="text-foreground/80">The timeline depends on state-specific processing speeds and departmental approvals.</p>
+  </div>
+</div>
+
 
       </div>
     </section>
