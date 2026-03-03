@@ -109,7 +109,7 @@ export const Footer = () => {
 
         {/* Contact & Legal Section */}
         <div className="space-y-6 border-t border-muted/20 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-6xl mx-auto px-4 font-bold">
             <span className="flex items-center gap-2 text-muted-foreground text-sm">
               <MapPin className="w-4 h-4 text-blue-500" />
               <span>G-45/1, Laxmi-Park, Nangloi, West-Delhi-41</span>
