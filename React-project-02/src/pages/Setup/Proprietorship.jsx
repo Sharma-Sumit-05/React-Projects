@@ -65,117 +65,95 @@ export const Proprietorship = () => {
         </div>
 
         {/* OVERVIEW SECTION */}
-        <div className="group bg-card/60 dark:bg-card/30  border border-border p-6 sm:p-10 md:p-16 rounded-xl sm:rounded-2xl md:rounded-[3rem] shadow-2xl transition-all hover:shadow-primary/10">
-          <div className="flex items-center gap-4 sm:gap-6 mb-6 sm:mb-10">
-            <h2 className="text-3xl sm:text-4xl md:text-4xl font-black tracking-tight group-hover:underline decoration-primary underline-offset-4">
-              Overview
-            </h2>
-          </div>
+<div className="group bg-card/60 dark:bg-card/30 border border-border p-6 sm:p-10 md:p-16 rounded-xl sm:rounded-2xl md:rounded-[3rem] shadow-2xl transition-all hover:shadow-primary/10 w-full">
+  <div className="flex items-center gap-4 sm:gap-6 mb-6 sm:mb-10">
+    <h2 className="text-3xl sm:text-4xl md:text-4xl font-black tracking-tight group-hover:underline decoration-primary underline-offset-4">
+      Overview
+    </h2>
+  </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-12">
-            <div className="lg:col-span-3 space-y-4 sm:space-y-6 px-2 sm:px-0">
-              <p className="text-md sm:text-xl md:text-2xl font-bold text-foreground/90 leading-tight tracking-tight text-justify">
-                The most accessible gateway to the Indian market, designed for speed and total autonomy.
-              </p>
+  {/* Removed 'grid lg:grid-cols-5' - now it's just a standard block */}
+  <div className="space-y-4 sm:space-y-6 px-2 sm:px-0">
+    <p className="text-md sm:text-xl md:text-2xl font-bold text-foreground/90 leading-tight tracking-tight text-justify">
+      The most accessible gateway to the Indian market, designed for speed and total autonomy.
+    </p>
 
-              <div className="space-y-3 sm:space-y-4 text-muted-foreground leading-relaxed text-base sm:text-lg md:text-lg text-justify">
-                <p className="px-2 sm:px-0 font-medium">
-                  Embarking on an entrepreneurial path in India is a significant milestone, and the <span className="text-primary font-semibold">Sole Proprietorship</span> stands as the most streamlined vehicle for that journey. This legal framework empowers a single visionary to oversee every facet of operations, exercising absolute decision-making authority without the need for board resolutions or partner consensus.
-                </p>
-                <p className="px-2 sm:px-0 font-medium">
-                  Engineered for maximum efficiency, it serves as the foundation for independent consultants and modern retailers who prioritize a <strong>rapid market launch</strong> over complex corporate hierarchy. While it offers unmatched simplicity and the lowest entry costs in the country, it remains a structure of high responsibility—the proprietor is the sole bearer of all outcomes, maintaining a direct legal link between personal success and business obligations.
-                </p>
-              </div>
-            </div>
-
-            <div className="lg:col-span-2 space-y-4 sm:space-y-6">
-              <div className="p-6 sm:p-8 bg-background/50 rounded-2xl border border-border space-y-4 sm:space-y-6">
-                <h4 className="text-base sm:text-lg font-black text-primary uppercase tracking-widest">Target Ecosystem</h4>
-                <div className="space-y-3 sm:space-y-4">
-                  {[
-                    { category: "Expertise", items: "Consultants, Coaches, Freelancers" },
-                    { category: "Commerce", items: "Retailers, E-commerce Sellers" },
-                    { category: "Services", items: "Agency Owners, Digital Creators" }
-                  ].map((group, i) => (
-                    <div key={i} className="border-b border-border pb-3 sm:pb-4 last:border-0">
-                      <p className="text-xs sm:text-sm font-bold opacity-40 mb-1">{group.category}</p>
-                      <p className="text-foreground font-bold text-sm sm:text-base">{group.items}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-primary text-primary-foreground rounded-2xl shadow-lg hover:brightness-110 transition-all duration-300">
-                <span className="font-bold text-sm sm:text-base">Zero Profit Sharing</span>
-                <div className="w-1 h-1 bg-current opacity-50 rounded-full"></div>
-                <span className="opacity-90 text-xs sm:text-sm font-medium">You keep 100%</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="space-y-3 sm:space-y-4 text-muted-foreground leading-relaxed text-base sm:text-lg md:text-lg text-justify">
+      <p className="px-2 sm:px-0 font-medium">
+        Embarking on an entrepreneurial path in India is a significant milestone, and the <span className="text-primary font-semibold">Sole Proprietorship</span> stands as the most streamlined vehicle for that journey. This legal framework empowers a single visionary to oversee every facet of operations, exercising absolute decision-making authority without the need for board resolutions or partner consensus.
+      </p>
+      <p className="px-2 sm:px-0 font-medium">
+        Engineered for maximum efficiency, it serves as the foundation for independent consultants and modern retailers who prioritize a <strong>rapid market launch</strong> over complex corporate hierarchy. While it offers unmatched simplicity and the lowest entry costs in the country, it remains a structure of high responsibility—the proprietor is the sole bearer of all outcomes, maintaining a direct legal link between personal success and business obligations.
+      </p>
+    </div>
+  </div>
+</div>
 
         {/* PROCESS SECTION */}
-        <div className="group bg-card/50 dark:bg-card/20 border border-border p-6 sm:p-10 md:p-14 rounded-xl sm:rounded-2xl md:rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 sm:gap-4 mb-8 sm:mb-10 md:mb-12 text-justify px-2 sm:px-0">
-            <div>
-              <h2 className="text-3xl sm:text-4xl md:text-4xl font-black">Process</h2>
-              <p className="text-muted-foreground font-medium mt-1 text-sm sm:text-base px-2 sm:px-0">Establishing legal validity through strategic licensing.</p>
-            </div>
+   <div className="group bg-card/50 dark:bg-card/20 border border-border p-6 sm:p-10 md:p-14 rounded-xl sm:rounded-2xl md:rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500">
+  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 sm:gap-4 mb-8 sm:mb-10 md:mb-12 text-justify px-2 sm:px-0">
+    <div>
+      <h2 className="text-3xl sm:text-4xl md:text-4xl font-black">Process</h2>
+      <p className="text-muted-foreground font-medium mt-1 text-sm sm:text-base px-2 sm:px-0">Establishing legal validity through strategic licensing.</p>
+    </div>
+  </div>
+
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 text-justify">
+    <div className="space-y-6 sm:space-y-8 md:space-y-10">
+      <div className="relative pl-10 sm:pl-12">
+        <span className="absolute left-0 top-0 w-8 h-8 bg-foreground text-background rounded-full flex items-center justify-center text-xs font-black group-hover:bg-primary transition-colors">01</span>
+        <h3 className="text-lg sm:text-xl md:text-xl font-bold mb-2 px-2 sm:px-0">Legal Identity & Branding</h3>
+        <p className="text-muted-foreground leading-relaxed text-sm sm:text-base md:text-base px-2 sm:px-0">
+          Finalize a unique <span className="relative inline-block font-semibold text-foreground group-hover:underline decoration-primary underline-offset-4">Business Name</span> that avoids trademark conflicts. Since the business is an extension of you, your <span className="font-semibold text-foreground">Personal PAN</span> serves as the permanent tax anchor.
+        </p>
+      </div>
+
+      <div className="relative pl-10 sm:pl-12">
+        <span className="absolute left-0 top-0 w-8 h-8 bg-foreground text-background rounded-full flex items-center justify-center text-xs font-black group-hover:bg-primary transition-colors">02</span>
+        <h3 className="text-lg sm:text-xl md:text-xl font-bold mb-2 px-2 sm:px-0">Fiscal Activation</h3>
+        <p className="text-muted-foreground leading-relaxed text-sm sm:text-base md:text-base px-2 sm:px-0">
+          Open a dedicated <span className="relative inline-block font-semibold text-foreground group-hover:underline decoration-primary underline-offset-4">Corporate Current Account</span>. Most Indian banks require at least two government-issued business proofs to activate commercial banking services.
+        </p>
+      </div>
+    </div>
+
+    {/* Simplified Step 03 - No extra box wrapper */}
+    <div className="relative pl-10 sm:pl-12">
+      <span className="absolute left-0 top-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-black">03</span>
+      <h3 className="text-lg sm:text-xl md:text-xl font-bold mb-2 px-2 sm:px-0">Proof of Existence</h3>
+      <p className="text-muted-foreground leading-relaxed text-sm sm:text-base md:text-base mb-6 px-2 sm:px-0">
+        Secure a minimum of two registrations based on your specific industry requirements:
+      </p>
+
+      {/* Cool, simple grid of badges instead of boxed cards */}
+      <div className="flex flex-wrap gap-2 px-2 sm:px-0">
+        {[
+          { label: "GST Registration", hint: "Taxation" },
+          { label: "MSME (Udyam)", hint: "Benefits" },
+          { label: "Shop & Establishment", hint: "Permit" },
+          { label: "Trade License", hint: "Industry" },
+          { label: "FSSAI (Food)", hint: "Compliance" },
+          { label: "Professional Tax", hint: "State" }
+        ].map((item, i) => (
+          <div key={i} className="group/item flex items-center gap-2 bg-foreground/5 hover:bg-primary/10 border border-border/50 rounded-full py-1.5 px-4 transition-all duration-300">
+            <div className="w-1.5 h-1.5 rounded-full bg-primary/40 group-hover/item:bg-primary" />
+            <span className="text-xs font-bold text-foreground">{item.label}</span>
+            <span className="hidden sm:inline text-[9px] uppercase tracking-widest text-muted-foreground/70">| {item.hint}</span>
           </div>
+        ))}
+      </div>
+    </div>
+  </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 text-justify">
-            <div className="space-y-6 sm:space-y-8 md:space-y-10">
-              <div className="relative pl-10 sm:pl-12">
-                <span className="absolute left-0 top-0 w-8 h-8 bg-foreground text-background rounded-full flex items-center justify-center text-xs font-black group-hover:bg-primary transition-colors">01</span>
-                <h3 className="text-lg sm:text-xl md:text-xl font-bold mb-2 px-2 sm:px-0">Legal Identity & Branding</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base md:text-base px-2 sm:px-0">
-                  Finalize a unique <span className="relative inline-block font-semibold text-foreground group-hover:underline decoration-primary underline-offset-4">Business Name</span> that avoids trademark conflicts. Since the business is an extension of you, your <span className="font-semibold text-foreground">Personal PAN</span> serves as the permanent tax anchor.
-                </p>
-              </div>
-
-              <div className="relative pl-10 sm:pl-12">
-                <span className="absolute left-0 top-0 w-8 h-8 bg-foreground text-background rounded-full flex items-center justify-center text-xs font-black group-hover:bg-primary transition-colors">02</span>
-                <h3 className="text-lg sm:text-xl md:text-xl font-bold mb-2 px-2 sm:px-0">Fiscal Activation</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base md:text-base px-2 sm:px-0">
-                  Open a dedicated <span className="relative inline-block font-semibold text-foreground group-hover:underline decoration-primary underline-offset-4">Corporate Current Account</span>. Most Indian banks require at least two government-issued business proofs to activate commercial banking services.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-background/40 p-6 sm:p-8 rounded-2xl border border-border">
-              <div className="flex items-center gap-2 sm:gap-2 mb-4 sm:mb-6">
-                <span className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-black">03</span>
-                <h3 className="text-lg sm:text-xl md:text-xl font-bold px-2 sm:px-0">Proof of Existence</h3>
-              </div>
-              <p className="text-xs sm:text-sm md:text-sm text-muted-foreground mb-4 sm:mb-6 font-medium px-2 sm:px-0">Secure a minimum of two registrations based on your industry:</p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
-                {[
-                  { label: "GST Registration", hint: "For Inter-state/High Turnover" },
-                  { label: "MSME (Udyam)", hint: "For Govt. Benefits" },
-                  { label: "Shop & Establishment", hint: "Local Municipal Permit" },
-                  { label: "Trade / Drug License", hint: "Industry Specific" },
-                  { label: "FSSAI (Food)", hint: "For Eateries/Cloud Kitchens" },
-                  { label: "Professional Tax", hint: "State Compliance" }
-                ].map((item, i) => (
-                  <div key={i} className="bg-card p-2 sm:p-3 rounded-xl border border-border/50 shadow-sm hover:border-primary/40 transition-colors text-center">
-                    <p className="text-xs font-black text-foreground mb-0.5 text-left sm:text-center">{item.label}</p>
-                    <p className="text-[10px] text-muted-foreground uppercase tracking-tighter text-left sm:text-center">{item.hint}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-8 sm:mt-10 md:mt-12 flex items-center gap-3 sm:gap-4 p-4 sm:p-6 bg-primary text-primary-foreground rounded-3xl shadow-xl transition-all duration-300 text-justify">
-            <div className="h-8 sm:h-10 w-8 sm:w-10 rounded-full bg-background/20 flex items-center justify-center shrink-0">
-              <Zap className="w-4 sm:w-5 h-4 sm:h-5 fill-current" />
-            </div>
-            <p className="font-bold text-sm sm:text-base leading-relaxed">
-              Ready for Launch: <span className="font-normal opacity-90 ml-1">Once licenses are active and banking is live, your operations are 100% legally compliant.</span>
-            </p>
-          </div>
-        </div>
+  <div className="mt-8 sm:mt-10 md:mt-12 flex items-center gap-3 sm:gap-4 p-4 sm:p-6 bg-primary text-primary-foreground rounded-3xl shadow-xl transition-all duration-300 text-justify">
+    <div className="h-8 sm:h-10 w-8 sm:w-10 rounded-full bg-background/20 flex items-center justify-center shrink-0">
+      <Zap className="w-4 sm:w-5 h-4 sm:h-5 fill-current" />
+    </div>
+    <p className="font-bold text-sm sm:text-base leading-relaxed">
+      Ready for Launch: <span className="font-normal opacity-90 ml-1">Once licenses are active and banking is live, your operations are 100% legally compliant.</span>
+    </p>
+  </div>
+</div>
 
         {/* DOCUMENTS SECTION */}
         <div className="group bg-card/50 dark:bg-card/20 border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
