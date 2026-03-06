@@ -1,202 +1,221 @@
-import { Users, FileSignature, ShieldAlert, Clock, User, Landmark, CheckCircle2, ShieldCheck, Scale } from "lucide-react";
+import React from "react";
+import { Users, FileSignature, ShieldAlert, Clock, User, Landmark, CheckCircle2, ShieldCheck, Scale, Zap, AlertCircle } from "lucide-react";
 
 export const Partnership = () => {
   return (
-    <section className="relative min-h-screen font-sans bg-slate-50/50 overflow-x-hidden">
-      {/* Background Image - Adjusted opacity and z-index */}
+    <section className="relative min-h-screen font-sans bg-background text-foreground transition-colors duration-300">
+      {/* BACKGROUND WATERMARK */}
       <div className="fixed inset-0 flex items-center justify-center z-0 pointer-events-none">
         <img
-          className="max-h-[80vh] w-auto object-contain opacity-5 md:opacity-10 mt-20"
+          className="max-h-[70vh] sm:max-h-[80vh] md:max-h-[90vh] w-auto object-contain 
+               opacity-30 dark:opacity-50 
+               mt-16 sm:mt-20 md:mt-24 lg:mt-20 transition-opacity duration-500"
           src="/Logo/logo.png"
           alt="Arostat Background"
         />
       </div>
 
-      {/* Hero Section - Added max-width and padding */}
-      <div className="relative z-10 flex flex-col items-center mx-auto pt-24 md:pt-32 pb-16 md:pb-20 px-6 max-w-5xl text-center">
-        <h1 className="text-5xl md:text-8xl lg:text-9xl font-black text-slate-900 tracking-tighter leading-none">
-          Partnership
+      {/* HERO SECTION */}
+      <div className="relative z-10 flex flex-col items-center mx-auto pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-10 sm:pb-12 md:pb-16 lg:pb-20 px-4 sm:px-6 md:px-6 max-w-6xl text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black leading-tight tracking-tighter uppercase">
+          PARTNERSHIP
         </h1>
-
-        <div className="mt-8 md:mt-10 max-w-3xl">
-          <p className="text-lg md:text-2xl text-slate-700 leading-relaxed font-medium">
-            Under the 
-            <span className="text-slate-900 italic"> Indian Partnership Act of 1932, </span>
-            a partnership firm is established through a formal agreement known as a Partnership Deed. This legal instrument defines the rights, duties, and liabilities of every partner involved.
+        <div className="mt-4 sm:mt-6 md:mt-8 lg:mt-10 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/80 leading-relaxed font-medium text-justify px-2 sm:px-0">
+            Governed by the 
+            <span className="text-foreground italic underline decoration-primary/60 underline-offset-4 mx-2">
+               Indian Partnership Act of 1932,
+            </span> 
+            this structure transforms mutual trust into a <span className="font-bold uppercase tracking-tight text-primary">formidable legal entity</span>. 
+            Through a structured Partnership Deed, it codifies the rights and liabilities of every stakeholder for long-term commercial stability.
           </p>
-        </div>
-        
-        <div className="mt-12 flex flex-col items-center gap-2 text-slate-400">
-          <span className="text-xs font-extrabold uppercase tracking-[0.2em]">Explore Details</span>
-          <div className="w-px h-12 bg-blue-800/40"></div>
         </div>
       </div>
 
-      {/* Main Content Container - Added max-w-7xl to stop it looking weird on wide screens */}
-      <div className="relative z-10 mx-auto px-6 pb-24 max-w-7xl space-y-12">
-
-        {/* Strategic Overview */}
-        <div className="group bg-white/70 backdrop-blur-md border border-white/50 p-8 md:p-16 rounded-[2.5rem] md:rounded-[3rem] shadow-2xl shadow-slate-200/60 transition-all hover:shadow-blue-100/50">
-          <div className="flex items-center gap-6 mb-8 md:mb-10">
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight group-hover:underline decoration-blue-600 underline-offset-4">
-              Strategic Overview
-            </h2>
-          </div>
-          <div className="max-w-4xl">
-            <p className="text-xl md:text-2xl font-bold text-slate-800 leading-tight tracking-tight text-justify mb-6">
-              The most accessible gateway to the Indian market, designed for speed and total autonomy.
-            </p>
-            <p className="text-slate-600 leading-relaxed text-base md:text-lg text-justify">
-              Forming a partnership is an excellent strategy for entrepreneurs to synergize their resources and expertise. In India, the partnership model is highly favored due to its inherent flexibility and ease of setup. While registration is optional, it is highly recommended to secure legal safeguards and enhance commercial credibility.
-            </p>
-          </div>
-        </div>
-
-        {/* Process Section */}
-        <div className="group bg-white/50 border border-slate-200 p-8 md:p-14 rounded-[2.5rem] md:rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">Process</h2>
-            <p className="text-slate-500 font-medium mt-1 italic">Formal business presentation & legal guide.</p>
+      <div className="relative z-10 mx-auto px-4 sm:px-6 md:px-6 pb-12 sm:pb-16 md:pb-24 max-w-6xl space-y-8 sm:y-10 md:space-y-12">
+{/* why us */}
+ <div className="space-y-8 sm:space-y-10 md:space-y-12 py-6 sm:py-8 md:py-10">
+          <div className="text-center px-2 sm:px-0">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl font-black">Why Us</h2>
+            <p className="text-muted-foreground mt-2 font-medium text-base sm:text-lg px-2 sm:px-0">Why entrepreneurs choose the Proprietorship model.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
-              { n: "01", t: "Name Selection", d: "Choose a unique name that avoids restricted terms and trademark conflicts." },
-              { n: "02", t: "Drafting Deed", d: "Define capital contributions, profit ratios, and specific partner roles." },
-              { n: "03", t: "Execution", d: "Print on judicial stamp paper and sign before a Notary Public." },
-              { n: "04", t: "Submission", d: "File Form 1 with the Registrar of Firms (RoF) at your principal office." },
-              { n: "05", t: "Fee Settlement", d: "Pay prescribed statutory fees to the Registrar to initiate processing." },
-              { n: "06", t: "Certification", d: "Obtain the formal Certificate of Registration upon successful verification." }
-            ].map((step, i) => (
-              <div key={i} className="relative pl-12 text-justify">
-                <span className="absolute left-0 top-0 w-8 h-8 bg-slate-900 text-white rounded-full flex items-center justify-center text-xs font-black">{step.n}</span>
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">{step.t}</h3>
-                <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.d}</p>
+              { t: "Absolute Control", d: "Exercise total authority over every business decision without partner consensus." },
+              { t: "100% Profit Retention", d: "Every rupee of net profit belongs solely to you—no dividends or profit-sharing." },
+              { t: "Financial Privacy", d: "Keep your business performance confidential; no public filing of annual accounts." },
+              { t: "Minimal Entry Barrier", d: "The most cost-effective structure to launch, featuring the lowest registration fees." },
+              { t: "Operational Agility", d: "Pivot your strategy, change products, or update marketing instantly as you see fit." },
+              { t: "Lean Compliance", d: "Focus on growth rather than paperwork with significantly reduced statutory filings." }
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group bg-card/50 dark:bg-card/20  border border-border p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-xl hover:border-primary/40 transition-all duration-300 flex flex-col items-center text-center h-full "
+              >
+                <h3 className="font-bold mb-3 text-lg sm:text-xl group-hover:text-primary transition-colors w-full">
+                  <span className="relative inline-block w-full">
+                    {item.t}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                  </span>
+                </h3>
+                <p className="text-muted-foreground text-sm sm:text-md">
+                  {item.d}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Roadmap & Document Module */}
-        <div className="group bg-white/80 backdrop-blur-md border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-          <div className="p-8 md:p-14 border-b border-slate-100">
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-8 flex items-center gap-3">
-              <div className="w-2 h-8 bg-amber-500 rounded-full"></div>
-              Registration Roadmap
+        {/* STRATEGIC OVERVIEW CARD */}
+        <div className="group bg-card/60 dark:bg-card/30 border border-border p-6 sm:p-10 md:p-16 rounded-xl sm:rounded-2xl md:rounded-[3rem] shadow-2xl transition-all hover:shadow-primary/10">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl font-black tracking-tight group-hover:underline decoration-primary underline-offset-4 mb-8">
+            Strategic Overview
+          </h2>
+          <div className="max-w-4xl space-y-6">
+            <p className="text-lg sm:text-xl md:text-2xl font-bold text-foreground/90 leading-tight tracking-tight text-justify">
+              Synergize resources and expertise with the most favored model for collaborative entrepreneurship.
+            </p>
+            <p className="text-muted-foreground leading-relaxed text-base sm:text-lg text-justify font-medium">
+              While formation is simple, <span className="text-primary font-bold italic text-sm uppercase">Registration</span> is the critical step that separates casual ventures from credible institutions. It provides the legal "teeth" required to enforce contracts and protects the firm’s interests in a competitive marketplace.
+            </p>
+          </div>
+        </div>
+
+
+        {/* PROCESS GRID */}
+        <div className="group bg-card/50 dark:bg-card/20 border border-border p-6 sm:p-10 md:p-14 rounded-xl sm:rounded-2xl md:rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500">
+          <div className="mb-10 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl font-black">Process</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-12">
+            {[
+              { n: "01", t: "Name Selection", d: "Choose a unique identity that avoids trademark conflicts and restricted government terms." },
+              { n: "02", t: "Drafting Deed", d: "Precisely define capital contributions, profit-sharing ratios, and partner-specific duties." },
+              { n: "03", t: "Execution", d: "Legalize on judicial stamp paper and execute before a certified Notary Public." },
+              { n: "04", t: "Submission", d: "File Form 1 with the Registrar of Firms (RoF) within your jurisdictional office." },
+              { n: "05", t: "Fee Settlement", d: "Remit the prescribed statutory fees to trigger the Registrar's verification process." },
+              { n: "06", t: "Certification", d: "Receive the formal Certificate of Registration, finalizing the firm's legal birth." }
+            ].map((step, i) => (
+              <div key={i} className="relative pl-12 text-justify group/step">
+                <span className="absolute left-0 top-0 w-9 h-9 bg-foreground text-background rounded-full flex items-center justify-center text-xs font-black group-hover/step:bg-primary transition-colors">{step.n}</span>
+                <h3 className="text-lg sm:text-xl font-black text-foreground mb-2">{step.t}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed font-medium">{step.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* DOCUMENT MODULE */}
+        <div className="bg-card/50 dark:bg-card/20 border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+          <div className="p-6 sm:p-10 md:p-14 border-b border-border">
+            <h2 className="text-2xl sm:text-3xl font-black mb-8 flex items-center gap-3">
+              <div className="w-2 h-8 bg-primary rounded-full"></div>
+              Documents
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
               {[
-                { n: "01", t: "Documentation", d: "Draft the Partnership Deed and prepare the Affidavit." },
-                { n: "02", t: "Legalization", d: "Sign on stamp paper and obtain Notary approval." },
-                { n: "03", t: "Submission", d: "File Form 1 with the Registrar along with required proofs." },
-                { n: "04", t: "Certification", d: "Receive the official Certificate of Registration." }
+                { n: "01", t: "Drafting", d: "Formulate Deed and prepare Affidavit." },
+                { n: "02", t: "Legalization", d: "Stamp duty and Notary approval." },
+                { n: "03", t: "Filing", d: "Submission of Form 1 to the RoF." },
+                { n: "04", t: "Activation", d: "Receive the Official Certificate." }
               ].map((step, i) => (
                 <div key={i} className="space-y-2">
-                  <span className="text-amber-600 font-black text-xs tracking-widest uppercase">{step.n}</span>
-                  <h4 className="font-bold text-slate-900">{step.t}</h4>
-                  <p className="text-sm text-slate-500 leading-relaxed">{step.d}</p>
+                  <span className="text-primary font-black text-[10px] tracking-widest uppercase">{step.n}</span>
+                  <h4 className="font-black text-foreground text-sm sm:text-base">{step.t}</h4>
+                  <p className="text-xs sm:text-sm text-muted-foreground font-medium">{step.d}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 bg-slate-50/50">
-            <div className="p-8 md:p-14 border-b md:border-b-0 md:border-r border-slate-100">
-              <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <Users className="w-5 h-5 text-amber-600" /> Partner Credentials
+          <div className="grid grid-cols-1 md:grid-cols-2 bg-muted/20">
+            <div className="p-6 sm:p-10 md:p-14 border-b md:border-b-0 md:border-r border-border">
+              <h3 className="text-lg sm:text-xl font-bold mb-6 flex items-center gap-2 text-primary">
+                <Users className="w-5 h-5" /> Partner Credentials
               </h3>
               <ul className="space-y-4">
-                {["Personal PAN Cards", "Aadhaar / Passport / DL", "Passport Photos", "Signed Affidavit"].map((doc, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-600 font-medium text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" /> {doc}
+                {["PAN Cards (Personal)", "Aadhaar / Passport / DL", "Passport Photos (Cross-signed)", "Signed Legal Affidavit"].map((doc, i) => (
+                  <li key={i} className="flex items-center gap-3 text-foreground/80 font-semibold text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" /> {doc}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="p-8 md:p-14">
-              <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <FileSignature className="w-5 h-5 text-amber-600" /> Registration Docs
+            <div className="p-6 sm:p-10 md:p-14">
+              <h3 className="text-lg sm:text-xl font-bold mb-6 flex items-center gap-2 text-primary">
+                <FileSignature className="w-5 h-5" /> Registration Docs
               </h3>
               <ul className="space-y-4">
-                {["Filled Form 1", "Original Notarized Deed", "Utility Bill / Property Docs", "Rent Agreement & NOC"].map((doc, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-600 font-medium text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" /> {doc}
+                {["Original Notarized Deed", "Certified Utility Bills", "Rent Agreement & NOC", "Completed Form 1"].map((doc, i) => (
+                  <li key={i} className="flex items-center gap-3 text-foreground/80 font-semibold text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" /> {doc}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="px-10 py-6 bg-slate-900 text-white flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-            <p className="text-sm font-medium opacity-80 italic flex items-center gap-2">
-              <ShieldAlert className="w-4 h-4 text-amber-500" />
-              Pro-Tip: Ensure partners sign across their photos for RoF compliance.
+
+          <div className="px-6 sm:px-10 py-5 sm:py-6 bg-primary text-primary-foreground flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <p className="text-xs sm:text-sm font-bold italic flex items-center gap-2 uppercase tracking-wide">
+              <ShieldAlert className="w-4 h-4 fill-current" />
+              RoF Compliance: Partners must sign across photos for validation.
             </p>
-            <div className="flex items-center gap-2 text-amber-400 font-bold text-sm shrink-0">
-              <Clock className="w-4 h-4" /> 5-10 Working Days
+            <div className="flex items-center gap-2 text-primary-foreground font-black text-xs sm:text-sm shrink-0 bg-white/20 px-4 py-2 rounded-full">
+              <Clock className="w-4 h-4" /> 5-10 WORKING DAYS
             </div>
           </div>
         </div>
 
-        {/* Investment Setup */}
-        <div className="group bg-white/50 border border-slate-200 p-8 md:p-14 rounded-[2.5rem] md:rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500">
-          <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-8">Investment Setup</h2>
-          <p className="text-slate-600 leading-relaxed text-base md:text-lg text-justify max-w-4xl">
-            Costs are determined by state regulations and consist of statutory fees, mandatory stamp duty (often based on capital contribution), and consultancy charges. Additional costs apply for supplementary registrations like PAN, TAN, and GST.
-          </p>
+
+
+        {/* INVESTMENT SETUP */}
+        <div className="group bg-card/50 dark:bg-card/20 border border-border p-6 sm:p-10 md:p-14 rounded-xl sm:rounded-2xl md:rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500 text-justify">
+           <h2 className="text-3xl sm:text-4xl font-black mb-8">Fee</h2>
+           <p className="text-muted-foreground leading-relaxed text-base sm:text-lg max-w-4xl font-medium">
+             Costs are determined by state regulations and consist of statutory fees, mandatory 
+             <span className="text-foreground font-bold"> Stamp Duty</span> (based on capital contribution), and professional consultancy. Additional activation costs apply for secondary identifiers like PAN, TAN, and GST.
+           </p>
+           
+           <div className="mt-8 flex items-center gap-3 p-4 bg-blue-500/10 border border-blue-500/20 rounded-2xl text-blue-600">
+             <AlertCircle size={20} />
+             <p className="text-xs sm:text-sm font-bold uppercase tracking-tight">Timeline: 5 to 10 Working Days for full certification.</p>
+           </div>
         </div>
 
-        {/* Strategic Advantage - Responsive Grid Fix */}
-        <div className="group bg-card border border-border p-8 md:p-14 rounded-[2.5rem] md:rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-500">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-black text-foreground tracking-tight italic">Strategic Advantage</h2>
-              <p className="text-foreground/60 font-medium mt-1">Choosing registered over unregistered firms.</p>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 shrink-0">
-              <ShieldCheck className="w-4 h-4 text-primary" />
-              <span className="text-primary font-bold text-xs uppercase tracking-widest">Full Legal Protection</span>
-            </div>
-          </div>
+        {/* TIMELINE SECTION - MATCHING PROPRIETORSHIP THEME */}
+<div className="text-justify bg-card/50 dark:bg-card/20 p-6 sm:p-8 md:p-10 border border-border rounded-2xl sm:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500">
+  <div className="mb-6 flex items-center gap-4">
+    <div className="p-3 bg-primary/10 rounded-xl">
+      <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-primary animate-pulse" />
+    </div>
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground uppercase tracking-tighter">
+       Timeline
+    </h2>
+  </div>
 
-          {/* Grid: 1 col on mobile, 2 on tablet, 5 on lg desktop */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 relative">
-            <div className="hidden lg:block absolute top-10 left-0 w-full h-px bg-border z-0"></div>
+  <div className="space-y-4 sm:space-y-6">
+    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+      <span className="px-4 py-1 bg-primary text-primary-foreground text-sm font-black rounded-full w-fit">
+        ESTIMATED DURATION: 5 TO 7 WORKING DAYS
+      </span>
+    </div>
 
-            {[
-              { tag: "Legal Identity", title: "Rights Enforcement", val: "Lawsuit Ready", desc: "Standing to sue third parties and enforce contractual rights in court." },
-              { tag: "Trust Factor", title: "Market Credibility", val: "Client Trust", desc: "Builds immediate trust with vendors, banks, and large corporations." },
-              { tag: "Conflict Resolution", title: "Dispute Stability", val: "Internal Safety", desc: "Structured legal framework to resolve partner or third-party conflicts." },
-              { tag: "Capital Access", title: "Funding Eligibility", val: "Bank Preferred", desc: "Prioritized for business loans and formal credit lines." },
-              { tag: "Ease of Flow", title: "Simple Compliance", val: "Less Red Tape", desc: "Fewer annual filings compared to a Private Limited Company." }
-            ].map((item, i) => (
-              <div key={i} className="relative z-10 group/item">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-card border-4 border-background rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 shadow-sm group-hover/item:border-primary transition-all duration-300">
-                  <span className="text-primary font-black text-xl md:text-2xl">{i + 1}</span>
-                </div>
-                <h4 className="text-primary font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] mb-2">{item.tag}</h4>
-                <h3 className="text-lg md:text-xl font-black text-foreground mb-2 leading-tight">{item.title}</h3>
-                <p className="text-foreground/60 text-xs md:text-sm leading-relaxed mb-4">{item.desc}</p>
-                <div className="inline-flex items-center px-3 py-1 bg-background border border-border rounded-lg text-[10px] font-bold text-foreground/70 uppercase">{item.val}</div>
-              </div>
-            ))}
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+      <p className="text-foreground/80 leading-relaxed text-sm sm:text-lg font-medium">
+        The Unregistered Partnership is engineered for **instant commercial activation**. Unlike registered firms that wait for government approval, your timeline is driven solely by internal documentation and mandatory tax anchoring.
+      </p>
+      
+      <div className="space-y-3 border-l-2 border-primary/20 pl-6">
+        <p className="text-sm sm:text-base text-muted-foreground italic leading-relaxed">
+          "The process is linear: Drafting and notarization are completed within 48 hours. The remaining window is dedicated to **PAN processing** and bank account integration, allowing you to invoice clients in under a week."
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-          {/* Footer Action Card */}
-          <div className="mt-16 p-6 md:p-8 bg-foreground text-background rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
-            <div className="flex items-center gap-4 text-left">
-              <div className="h-12 w-12 rounded-2xl bg-primary flex items-center justify-center shrink-0">
-                <Scale className="text-primary-foreground" size={24} />
-              </div>
-              <div>
-                <p className="font-bold text-lg">Establish Your Legal Ground</p>
-                <p className="text-sm opacity-80 mt-1 italic">Unregistered firms cannot sue for dues over ₹100.</p>
-              </div>
-            </div>
-            <button className="w-full md:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-2xl font-black hover:opacity-90 transition-all">
-              Get Registered Now
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
